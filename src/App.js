@@ -25,11 +25,11 @@ export class App extends Component {
       console.log(keyword, typeof keyword)
       if (keyword === undefined || keyword.trim() === '') {
         response = await fetch(
-          'https://gnews.io/api/v4/top-headlines?token=dbc9b0c1f0e437e5c854bb921f7b2c21&lang=en'
+          'https://gnews.io/api/v4/top-headlines?token=46656601ce34e64abe13bf488460962c&lang=en'
         )
       } else {
         response = await fetch(
-          `https://gnews.io/api/v4/search?q=${keyword}&token=dbc9b0c1f0e437e5c854bb921f7b2c21&lang=en`
+          `https://gnews.io/api/v4/search?q=${keyword}&token=46656601ce34e64abe13bf488460962c&lang=en`
         )
       }
 
